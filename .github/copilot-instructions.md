@@ -1,9 +1,9 @@
 ## プロジェクト概要
 
 HTML / SCSS を使ったフロントエンド開発のスターターテンプレートです。
-Prettier・Stylelint を用いてコード品質を統一し、Live Sass Compiler で SCSS を自動コンパイルします。
+Prettier・Stylelint を用いてコード品質を統一し、npm scripts で SCSS を自動コンパイルします。
 
-**主な使用技術:** Sass, Prettier, Stylelint, Live Sass Compiler
+**主な使用技術:** Sass, Prettier, Stylelint
 
 ## コーディング規約
 
@@ -42,7 +42,7 @@ Prettier・Stylelint を用いてコード品質を統一し、Live Sass Compile
 ### SCSS
 
 - 編集するファイルは `project/style.scss` のみ
-- `project/style.css` は Live Sass Compiler が自動生成するため直接編集しない
+- `project/style.css` は npm scripts（Sass）が自動生成するため直接編集しない
 - CSS カスタムプロパティ（変数）は `:root` で定義する
 - `!important` の使用は原則禁止
 
