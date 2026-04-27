@@ -1,0 +1,52 @@
+{
+  // ========================
+  // ✨ フォーマッタの設定
+  // ========================
+
+  "editor.formatOnSave": true, // 保存時にprettierでコード整形
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit" // 保存時にstylelintの自動修正を実行（vscodeでは"explicit"が必要）
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // cssをprettierで整形
+  },
+
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // scssをprettierで整形
+  },
+
+  // ========================
+  // ✨ 拡張機能: stylelint
+  // ========================
+  "stylelint.validate": ["scss"], // cssは除外（stylelintはscssのみ適用）
+
+  // ========================
+  // ✨ 拡張機能: prettier
+  // ========================
+  "prettier.ignorePath": ".prettierignore", // 除外ファイルパス
+  "prettier.prettierPath": "./node_modules/prettier", // prettierのパス
+
+  // ========================
+  // ✨ 拡張機能: Live Sass Compiler
+  // ========================
+  "liveSassCompile.settings.autoprefix": [
+    "last 2 versions", // メジャーバージョンの最新2つ
+    "> 1%", // グローバルシェアが1%以上
+    "not dead" // 過去1年間にアップデートされたブラウザのみ
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**", // node_modules配下すべて除外
+    "/**/.vscode/**", // .vscode配下すべて除外
+    "/**/.history/**" // .history配下すべて除外
+  ],
+  "liveSassCompile.settings.generateMap": false, //mapファイルを出すか（true）
+  "liveSassCompile.settings.showOutputWindowOn": "Error", // エラーログ出力（エラー時のみ）
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded", // フォーマットルール
+      "extensionName": ".css" // コンパイルされたファイルの拡張子
+      //"savePath": "/development/css" // 保存場所のパス
+    }
+  ]
+}

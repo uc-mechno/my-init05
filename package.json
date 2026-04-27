@@ -1,0 +1,22 @@
+{
+  "name": "my-init05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.8.3",
+    "sass": "^1.99.0",
+    "stylelint": "^17.9.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-order": "^8.1.1"
+  }
+}
