@@ -31,9 +31,7 @@
   // ✨ 拡張機能: Live Sass Compiler
   // ========================
   "liveSassCompile.settings.autoprefix": [
-    "last 2 versions", // メジャーバージョンの最新2つ
-    "> 1%", // グローバルシェアが1%以上
-    "not dead" // 過去1年間にアップデートされたブラウザのみ
+    "last 2 versions" // メジャーバージョンの最新2つ
   ],
   "liveSassCompile.settings.excludeList": [
     "/**/node_modules/**", // node_modules配下すべて除外
