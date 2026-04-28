@@ -1,25 +1,24 @@
 {
   "name": "my-init05",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "sass": "sass --watch project/style.scss:project/style.css --style expanded --no-source-map",
+    "sass": "sass project/style.scss project/style.css --style expanded --no-source-map && postcss project/style.css --replace",
     "sass:dev": "sass --watch project/style.scss:project/style.css --style expanded",
-    "sass:build": "sass project/style.scss:project/style.css --style expanded --no-source-map",
-    "sass:prod": "sass project/style.scss:project/style.css --style compressed --no-source-map"
+    "sass:map": "sass project/style.scss project/style.css --style expanded && postcss project/style.css --replace --map",
+    "sass:build": "sass project/style.scss:project/style.css --style expanded --no-source-map && postcss project/style.css --replace",
+    "sass:prod": "sass project/style.scss:project/style.css --style compressed --no-source-map && postcss project/style.css --replace"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
+    "@stylistic/stylelint-plugin": "^5.1.0",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.12",
+    "postcss-cli": "^11.0.1",
     "postcss-scss": "^4.0.9",
     "prettier": "^3.8.3",
     "sass": "^1.99.0",
     "stylelint": "^17.9.1",
     "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-property-sort-order-smacss": "^11.2.0",
     "stylelint-config-standard-scss": "^17.0.0",
-    "stylelint-order": "^8.1.1"
+    "stylelint-scss": "^7.0.0"
   }
 }
