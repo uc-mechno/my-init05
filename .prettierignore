@@ -6,3 +6,5 @@ package-lock.json
 .prettierignore
 .prettierrc
 .eslintrc
+.stylelintrc.js
+postcss.config.js
